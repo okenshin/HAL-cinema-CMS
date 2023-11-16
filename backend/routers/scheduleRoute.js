@@ -1,12 +1,19 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/',function(req,res,next) {
-    res.json({
-        id : '1223',
-        screenid : 'A',
-        movieid : 'hp1'
-    });
+router.get('/', (req, res) => {
+  // MySQLプールにアクセス
+  const pool = req.mysql;
+
+  // MySQLクエリや操作を実行
+
+  // ここから欲しいデータの取得するクエリを書いていく
+  const query = 'SELECT s.scheduleID, m.movieName, s.screenID, s.scheduleStartDatetime FROM schedule s JOIN movie m ON s.movieID = m.movieID WHERE DATE(s.scheduleStartDatetime) = CURRENT_DATE() ORDER BY s.scheduleStartDatetime';
+
+  pool.query(query, (error, results, fields) => {
+    if (error) throw error;
+    res.json(results);
+  });
 });
 
 module.exports = router;
