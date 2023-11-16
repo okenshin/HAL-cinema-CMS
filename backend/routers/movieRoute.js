@@ -9,3 +9,5 @@ router.get('/',function(req,res,next) {
         length : '01:20:23',
     });
 });
+
+module.exports = router;

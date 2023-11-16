@@ -8,3 +8,5 @@ router.get('/',function(req,res,next) {
         movieid : 'hp1'
     });
 });
+
+module.exports = router;
