@@ -1,5 +1,5 @@
 import SampleSideMenu from "@/components/sideMenu";
-    export default function suchedule() {
+    export default function movie() {
         return (
           <>
               <SampleSideMenu />

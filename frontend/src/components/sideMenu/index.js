@@ -117,13 +117,21 @@ export default function PersistentDrawerLeft() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['映画予定表示', '映画情報', 'スケジュール情報'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+                <ListItemButton component="a" href="/movie_suchedule">
+                    <ListItemIcon>
+                    </ListItemIcon>
+                    <ListItemText primary="映画予定表示" />
+                </ListItemButton>
+                <ListItemButton href="/movie">
+                    <ListItemIcon>
+                    </ListItemIcon>
+                    <ListItemText primary="映画情報" />
+                </ListItemButton>
+                <ListItemButton href="/suchedule">
+                    <ListItemIcon>
+                    </ListItemIcon>
+                    <ListItemText primary="スケジュール情報" />
+                </ListItemButton>
         </List>
         <Divider />
       </Drawer>
