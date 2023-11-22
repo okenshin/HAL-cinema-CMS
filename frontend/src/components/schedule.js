@@ -1,0 +1,1 @@
+<Accordion TransitionProps={{ unmountOnExit: true }} />

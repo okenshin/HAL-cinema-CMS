@@ -1,0 +1,5 @@
+return (
+    <Accordion>
+        <SideMenu />
+    </Accordion>
+  )
