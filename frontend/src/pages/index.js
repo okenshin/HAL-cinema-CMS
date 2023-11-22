@@ -11,6 +11,10 @@ export default function index(){
       <Link href="/next">
         next
       </Link>
+      
+      <Link href="/move">
+        move
+      </Link>
     </>
   );
 }
