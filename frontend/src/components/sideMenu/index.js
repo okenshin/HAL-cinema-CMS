@@ -116,20 +116,14 @@ export default function PersistentDrawerLeft() {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
-                <ListItemButton component="a" href="/movie_suchedule">
-                    <ListItemIcon>
-                    </ListItemIcon>
+        <List>  
+                <ListItemButton href="/movie_suchedule">
                     <ListItemText primary="映画予定表示" />
                 </ListItemButton>
                 <ListItemButton href="/movie">
-                    <ListItemIcon>
-                    </ListItemIcon>
                     <ListItemText primary="映画情報" />
                 </ListItemButton>
                 <ListItemButton href="/suchedule">
-                    <ListItemIcon>
-                    </ListItemIcon>
                     <ListItemText primary="スケジュール情報" />
                 </ListItemButton>
         </List>
@@ -139,6 +133,7 @@ export default function PersistentDrawerLeft() {
         <DrawerHeader />
         <Typography paragraph>
           {/* 本文 */}
+          
         </Typography>
       </Main>
     </Box>
