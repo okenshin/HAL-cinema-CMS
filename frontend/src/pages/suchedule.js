@@ -1,13 +1,15 @@
 import SampleSideMenu from "@/components/sideMenu";
-import CustomizedTables  from '@mui/material/Button';
+import Table from '@mui/material/Table';
 
 
-export default function suchedule() {
+
+export default function suchedule(props) {
 return (
   <>
   
   <SampleSideMenu menutitle="スケジュール情報"/>
-  <CustomizedTables />
+
+  <Table />
   </>
 );
 }
