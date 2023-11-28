@@ -2,7 +2,7 @@ import SampleSideMenu from "@/components/sideMenu";
     export default function movie_suchedule() {
         return (
           <>
-              <SampleSideMenu />
+              <SampleSideMenu menutitle="映画予定表示" />
           </>
         )
       }

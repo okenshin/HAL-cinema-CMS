@@ -2,7 +2,7 @@ import SampleSideMenu from "@/components/sideMenu";
     export default function movie() {
         return (
           <>
-              <SampleSideMenu />
+              <SampleSideMenu menutitle="映画情報"/>
           </>
         )
       }
