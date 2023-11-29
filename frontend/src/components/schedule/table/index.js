@@ -42,13 +42,13 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   ];
   
   
-      export default function CustomizedTables(props) {
+      export default function CustomizedTables() {
           return (
             <>
-                
+{/*                 
                 <Stack spacing={2} direction="row">
                 <Button variant="outlined">新規追加</Button>
-                </Stack>
+                </Stack> */}
                 
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">

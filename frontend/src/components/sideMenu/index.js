@@ -117,13 +117,13 @@ export default function PersistentDrawerLeft(props) {
         </DrawerHeader>
         <Divider />
         <List>  
-                <ListItemButton href="/movie_suchedule">
+                <ListItemButton href="/movie_schedule">
                     <ListItemText primary="映画予定表示" />
                 </ListItemButton>
                 <ListItemButton href="/movie">
                     <ListItemText primary="映画情報" />
                 </ListItemButton>
-                <ListItemButton href="/suchedule">
+                <ListItemButton href="/schedule">
                     <ListItemText primary="スケジュール情報" />
                 </ListItemButton>
         </List>
