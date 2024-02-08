@@ -126,6 +126,9 @@ export default function PersistentDrawerLeft(props) {
                 <ListItemButton href="/schedule">
                     <ListItemText primary="スケジュール情報" />
                 </ListItemButton>
+                <ListItemButton href="/buy">
+                    <ListItemText primary="購入方法選択" />
+                </ListItemButton>
         </List>
         <Divider />
       </Drawer>
